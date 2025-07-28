@@ -3,7 +3,7 @@ export const sampleProjects = [
     _id: "project-1",
     title: "MULTI-ROBOT SYSTEM FOR AUTONOMOUS NAVIGATION AND ANOMALY DETECTION",
     slug: { current: "multi-robot-system" },
-    thumbnail: "https://media4.giphy.com/avatars/HeyAutoHQ/DgfrJNR8oUyv.gif",
+    thumbnail: typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio') ? '/portfolio/images/robot-system.gif' : '/images/robot-system.gif',
     description: `Designed and deployed a multi-robot simulation framework in ROS/Gazebo for distributed anomaly detection, integrating SLAM (slam_toolbox), autonomous navigation (NAV2), and a custom OpenCV perception pipeline on a fleet of three Clearpath Jackal UGVs.
 
 Engineered solutions for critical simulation-to-reality gap challenges, including debugging use_sim_time synchronization across the entire robotics stack (Gazebo, SLAM, NAV2) to stabilize map generation and enable reliable navigation.
