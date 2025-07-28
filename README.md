@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio
+
+A modern, responsive personal portfolio website built with Next.js, React, and Tailwind CSS. Features include project showcases, work experience, skills, and interactive modals.
+
+## Features
+
+- **Modern Design**: Clean, minimalist design with dark theme
+- **Responsive**: Works perfectly on all devices
+- **Interactive Modals**: Project and work experience details in modal dialogs
+- **Static Content**: No backend required - perfect for GitHub Pages
+- **Fast Performance**: Optimized for speed and SEO
+
+## Tech Stack
+
+- **Next.js 15**: React framework with static export
+- **React 19**: Latest React with hooks
+- **Tailwind CSS**: Utility-first CSS framework
+- **TypeScript**: Type safety throughout
+- **GitHub Pages**: Static hosting
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+### Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                 # Next.js app directory
+│   ├── page.tsx        # Homepage
+│   └── layout.tsx      # Root layout
+├── components/         # React components
+│   ├── ProjectCard.tsx
+│   ├── ProjectModal.tsx
+│   ├── WorkCard.tsx
+│   ├── WorkModal.tsx
+│   ├── SkillsSection.tsx
+│   └── Navbar.tsx
+├── data/              # Static data
+│   └── sampleProjects.ts
+└── utils/             # Utility functions
+    └── pastel.ts
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Available Scripts
 
-## Deploy on Vercel
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### GitHub Pages
+
+This project is configured for automatic deployment to GitHub Pages:
+
+1. Push your code to the `main` branch
+2. GitHub Actions will automatically build and deploy
+3. Your site will be available at `https://yourusername.github.io/portfolio`
+
+### Manual Deployment
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. The static files will be in the `out/` directory
+3. Upload the contents to your hosting provider
+
+## Customization
+
+### Adding Projects
+
+Edit `src/data/sampleProjects.ts` to add your projects:
+
+```typescript
+export const sampleProjects = [
+  {
+    _id: "project-1",
+    title: "Your Project Title",
+    slug: { current: "project-slug" },
+    thumbnail: "/path/to/image.jpg",
+    description: "Project description...",
+    technologies: ["React", "TypeScript", "Tailwind"],
+    liveUrl: "https://your-project.com",
+    sourceUrl: "https://github.com/yourusername/project",
+    video: null
+  }
+];
+```
+
+### Adding Work Experience
+
+Edit the work data in `src/app/page.tsx`:
+
+```typescript
+<WorkCard 
+  work={{
+    _id: "work-1",
+    company: "Company Name",
+    role: "Your Role",
+    duration: "Duration",
+    description: "Description...",
+    technologies: ["Tech1", "Tech2"]
+  }}
+  onWorkClick={handleWorkClick}
+/>
+```
+
+### Styling
+
+The project uses Tailwind CSS. You can customize colors, fonts, and layout by modifying the Tailwind classes in the components.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
