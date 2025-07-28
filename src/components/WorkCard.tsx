@@ -4,39 +4,41 @@
 import Image from 'next/image';
 
 const getTechIcon = (tech: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
   const icons: { [key: string]: string } = {
-    'AWS Lambda': '/icons/aws-lambda.svg',
-    'TypeScript': '/icons/typescript.svg',
-    'Node.js': '/icons/nodejs.svg',
-    'DynamoDB': '/icons/dynamodb.svg',
-    'MongoDB': '/icons/mongodb.svg',
-    'SQS': '/icons/sqs.svg',
-    'S3': '/icons/s3.svg',
-    'Twilio': '/icons/twilio.svg',
-    'API Gateway': '/icons/api-gateway.svg',
-    'Power Automate': '/icons/power-automate.svg',
-    'PowerApps': '/icons/powerapps.svg',
-    'Power BI': '/icons/power-bi.svg',
-    'PowerShell': '/icons/powershell.svg',
-    'AI/ML': '/icons/ai-ml.svg',
-    'Java': '/icons/java.svg',
-    'Spring MVC': '/icons/spring.svg',
-    'Kafka': '/icons/kafka.svg',
-    'Jenkins': '/icons/jenkins.svg',
-    'Box': '/icons/box.svg',
-    'Spring WebFlux': '/icons/spring.svg',
-    'AWS S3': '/icons/s3.svg',
-    'REST APIs': '/icons/rest-apis.svg'
+    'AWS Lambda': `${basePath}/icons/aws-lambda.svg`,
+    'TypeScript': `${basePath}/icons/typescript.svg`,
+    'Node.js': `${basePath}/icons/nodejs.svg`,
+    'DynamoDB': `${basePath}/icons/dynamodb.svg`,
+    'MongoDB': `${basePath}/icons/mongodb.svg`,
+    'SQS': `${basePath}/icons/sqs.svg`,
+    'S3': `${basePath}/icons/s3.svg`,
+    'Twilio': `${basePath}/icons/twilio.svg`,
+    'API Gateway': `${basePath}/icons/api-gateway.svg`,
+    'Power Automate': `${basePath}/power-automate.svg`,
+    'PowerApps': `${basePath}/icons/powerapps.svg`,
+    'Power BI': `${basePath}/icons/power-bi.svg`,
+    'PowerShell': `${basePath}/icons/powershell.svg`,
+    'AI/ML': `${basePath}/icons/ai-ml.svg`,
+    'Java': `${basePath}/icons/java.svg`,
+    'Spring MVC': `${basePath}/icons/spring.svg`,
+    'Kafka': `${basePath}/icons/kafka.svg`,
+    'Jenkins': `${basePath}/icons/jenkins.svg`,
+    'Box': `${basePath}/icons/box.svg`,
+    'Spring WebFlux': `${basePath}/icons/spring.svg`,
+    'AWS S3': `${basePath}/icons/s3.svg`,
+    'REST APIs': `${basePath}/icons/rest-apis.svg`
   };
-  return icons[tech] || '/icons/default.svg';
+  return icons[tech] || `${basePath}/icons/default.svg`;
 };
 
 const getCompanyLogo = (company: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
   const logos: { [key: string]: string } = {
-    'PROJECT REMA': '/logos/rematriation-project.svg',
-    'Eli Lilly & Company': '/logos/eli-lilly.png',
-    'RAKUTEN': '/logos/rakuten.png',
-    'IBM INDIA': '/logos/ibm.png'
+    'PROJECT REMA': `${basePath}/logos/rematriation-project.svg`,
+    'Eli Lilly & Company': `${basePath}/logos/eli-lilly.png`,
+    'RAKUTEN': `${basePath}/logos/rakuten.png`,
+    'IBM INDIA': `${basePath}/logos/ibm.png`
   };
   return logos[company] || null;
 };
