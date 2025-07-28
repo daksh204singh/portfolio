@@ -31,7 +31,7 @@ Contributed to the end-to-end system setup, including foundational environment c
     title:
       "POKÉCACHE: CACHE REPLACEMENT POLICY GENERATION WITH LLMs, CHAMPSIM, C++",
     slug: { current: "pokecache" },
-    thumbnail: process.env.NODE_ENV === 'production' ? '/portfolio/images/pokecache.svg' : '/images/pokecache.svg',
+    thumbnail: typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio') ? '/portfolio/images/pokecache.svg' : '/images/pokecache.svg',
     description: `Developed an automated framework that generates high-performance cache replacement policies using large language models (LLMs) and evolutionary search. Integrated with the ChampSim simulator to iteratively evolve and evaluate C++ implementations, outperforming traditional heuristics like LRU.
 
 The system leverages LLMs to generate and optimize cache replacement algorithms, then uses evolutionary search to refine and improve the generated policies. This approach demonstrates the potential of AI-assisted hardware optimization.`,
@@ -51,7 +51,7 @@ The system leverages LLMs to generate and optimize cache replacement algorithms,
     _id: "project-3",
     title: "HIGH-PERFORMANCE SORTING: BITONIC SORT, CUDA, C/C++",
     slug: { current: "bitonic-sort" },
-    thumbnail: process.env.NODE_ENV === 'production' ? '/portfolio/images/bitonic-sort.svg' : '/images/bitonic-sort.svg',
+    thumbnail: typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio') ? '/portfolio/images/bitonic-sort.svg' : '/images/bitonic-sort.svg',
     description: `Developed a high-performance parallel sorting solution using the Bitonic Sort algorithm, with implementations in OpenMP, CUDA (global and shared memory), and MPI. Analyzed scalability, identified limitations, and proposed future hybrid MPI + CUDA/OpenMP enhancements for improved distributed and multi-core performance.
 
 The project explores different parallel computing paradigms and their effectiveness for sorting algorithms, providing insights into performance optimization for large-scale data processing.`,

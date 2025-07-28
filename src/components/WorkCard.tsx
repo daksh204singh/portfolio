@@ -4,7 +4,10 @@
 import Image from 'next/image';
 
 const getTechIcon = (tech: string) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+  // Check if we're on GitHub Pages by looking at the current pathname
+  const isGitHubPages = typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio');
+  const basePath = isGitHubPages ? '/portfolio' : '';
+  
   const icons: { [key: string]: string } = {
     'AWS Lambda': `${basePath}/icons/aws-lambda.svg`,
     'TypeScript': `${basePath}/icons/typescript.svg`,
@@ -15,7 +18,7 @@ const getTechIcon = (tech: string) => {
     'S3': `${basePath}/icons/s3.svg`,
     'Twilio': `${basePath}/icons/twilio.svg`,
     'API Gateway': `${basePath}/icons/api-gateway.svg`,
-    'Power Automate': `${basePath}/power-automate.svg`,
+    'Power Automate': `${basePath}/icons/power-automate.svg`,
     'PowerApps': `${basePath}/icons/powerapps.svg`,
     'Power BI': `${basePath}/icons/power-bi.svg`,
     'PowerShell': `${basePath}/icons/powershell.svg`,
@@ -33,7 +36,10 @@ const getTechIcon = (tech: string) => {
 };
 
 const getCompanyLogo = (company: string) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+  // Check if we're on GitHub Pages by looking at the current pathname
+  const isGitHubPages = typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio');
+  const basePath = isGitHubPages ? '/portfolio' : '';
+  
   const logos: { [key: string]: string } = {
     'PROJECT REMA': `${basePath}/logos/rematriation-project.svg`,
     'Eli Lilly & Company': `${basePath}/logos/eli-lilly.png`,
