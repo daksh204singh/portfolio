@@ -7,6 +7,7 @@ import SkillsSection from "@/components/SkillsSection";
 import ProjectModal from "@/components/ProjectModal";
 import WorkModal from "@/components/WorkModal";
 import { sampleProjects } from "@/data/sampleProjects";
+import ScrollableContainer from "@/components/ScrollableContainer";
 
 interface Project {
   _id: string;
@@ -79,7 +80,7 @@ export default function Home() {
         </header>
         <section>
           <h2 className="text-2xl font-bold mb-6 text-left font-rammetto-one text-neutral-900 dark:text-white">Experience</h2>
-          <div className="flex gap-6 overflow-x-auto pt-2 pb-4 text-neutral-900 dark:text-white text-left font-sans scrollbar-custom">
+          <ScrollableContainer>
             {/* Work experience entries */}
             <WorkCard 
               work={{
@@ -155,17 +156,16 @@ export default function Home() {
               }}
               onWorkClick={handleWorkClick}
             />
-
-          </div>
+          </ScrollableContainer>
         </section>
         <SkillsSection />
         <section className="mt-12">
           <h2 className="text-2xl font-bold mb-6 text-left font-rammetto-one text-neutral-900 dark:text-white">Work</h2>
-          <div className="flex gap-6 overflow-x-auto pt-2 pb-4 text-neutral-900 dark:text-white text-left font-sans scrollbar-custom">
+          <ScrollableContainer>
             {projects.map((project: Project) => (
               <ProjectCard key={project._id} project={project} onProjectClick={handleProjectClick} />
             ))}
-          </div>
+          </ScrollableContainer>
         </section>
         <section className="mt-12">
           <h2 className="text-2xl font-bold mb-6 text-left font-rammetto-one text-neutral-900 dark:text-white">Education</h2>
