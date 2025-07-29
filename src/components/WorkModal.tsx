@@ -58,11 +58,11 @@ export default function WorkModal({ work, isOpen, onClose }: WorkModalProps) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 text-neutral-900 dark:text-white hover:text-neutral-600 dark:hover:text-gray-300 transition-colors"
+          className="absolute top-4 right-4 z-10 bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm border border-neutral-200 dark:border-neutral-700 rounded-full p-2 shadow-lg hover:shadow-xl hover:scale-110 text-neutral-900 dark:text-white hover:text-red-500 dark:hover:text-red-400 transition-all duration-200"
           aria-label="Close modal"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
 
