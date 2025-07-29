@@ -85,7 +85,7 @@ export default function Home() {
             <WorkCard 
               work={{
                 _id: "work-1",
-                company: "PROJECT REMA",
+                company: "The Rematriation Project",
                 role: "SOFTWARE ENGINEER",
                 location: "Remote",
                 duration: "May 2021 – Present",
