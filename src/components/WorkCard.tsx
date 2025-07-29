@@ -3,10 +3,10 @@
 
 import Image from 'next/image';
 
+// Base path for GitHub Pages deployment
+const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+
 const getTechIcon = (tech: string) => {
-  // Check if we're on GitHub Pages by looking at the current pathname
-  const isGitHubPages = typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio');
-  const basePath = isGitHubPages ? '/portfolio' : '';
   
   const icons: { [key: string]: string } = {
     'AWS Lambda': `${basePath}/icons/aws-lambda.svg`,
@@ -36,9 +36,6 @@ const getTechIcon = (tech: string) => {
 };
 
 const getCompanyLogo = (company: string) => {
-  // Check if we're on GitHub Pages by looking at the current pathname
-  const isGitHubPages = typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio');
-  const basePath = isGitHubPages ? '/portfolio' : '';
   
   const logos: { [key: string]: string } = {
     'Project REMA': `${basePath}/logos/rematriation-project.svg`,
