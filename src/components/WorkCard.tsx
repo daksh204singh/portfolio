@@ -40,13 +40,23 @@ const getCompanyLogo = (company: string) => {
   const isGitHubPages = typeof window !== 'undefined' && (window.location.pathname.startsWith('/portfolio') || window.location.hostname.includes('github.io'));
   const basePath = isGitHubPages ? '/portfolio' : '';
   
+  // Debug logging
+  if (typeof window !== 'undefined') {
+    console.log('getCompanyLogo - Company:', company, 'isGitHubPages:', isGitHubPages, 'basePath:', basePath);
+  }
+  
   const logos: { [key: string]: string } = {
     'Project REMA': `${basePath}/logos/rematriation-project.svg`,
     'Eli Lilly & Company': `${basePath}/logos/eli-lilly.png`,
     'Rakuten': `${basePath}/logos/rakuten.png`,
     'IBM': `${basePath}/logos/ibm.png`
   };
-  return logos[company] || null;
+  
+  const result = logos[company] || null;
+  if (typeof window !== 'undefined') {
+    console.log('getCompanyLogo - Result:', result);
+  }
+  return result;
 };
 
 interface Work {
@@ -85,6 +95,11 @@ export default function WorkCard({ work, onWorkClick }: WorkCardProps) {
   const pastelColor = pastelColors[colorIndex];
 
   const companyLogo = getCompanyLogo(work.company);
+  
+  // Debug logging
+  if (typeof window !== 'undefined') {
+    console.log('Company:', work.company, 'Logo:', companyLogo);
+  }
 
   const handleClick = () => {
     onWorkClick(work);
