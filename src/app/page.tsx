@@ -66,9 +66,9 @@ export default function Home() {
       <main className="max-w-5xl mx-auto w-full px-4 pt-10">
         <header className="mb-10">
           <h1 className="text-4xl font-extrabold mb-2 text-left font-rammetto-one text-neutral-900 dark:text-white">Daksh Pratap Singh</h1>
-          <p className="text-lg mb-4 max-w-2xl text-left text-neutral-600 dark:text-neutral-300">
-            I&apos;m a software engineer passionate about building creative, accessible, and impactful web experiences.
-          </p>
+                                <p className="text-lg mb-4 max-w-2xl text-left text-neutral-600 dark:text-neutral-300">
+                        I love making software faster, whether it&apos;s tuning cloud systems for sub-70ms speed or using AI to find new ways to improve performance.
+                      </p>
           <div className="flex gap-4 mb-4">
             <a href="https://www.linkedin.com/in/dakshpratapsingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-neutral-700 dark:text-neutral-300 hover:opacity-80 transition-opacity">
               <svg width="24" height="24" fill="currentColor"><path d="M4.98 3.5C3.33 3.5 2 4.82 2 6.4c0 1.56 1.3 2.9 2.94 2.9h.03c1.65 0 2.98-1.34 2.98-2.9C7.95 4.82 6.63 3.5 4.98 3.5zM2.4 21.5h5.16V9H2.4v12.5zM9.34 9h4.94v1.71h.07c.69-1.23 2.38-2.53 4.9-2.53 5.24 0 6.2 3.45 6.2 7.94V21.5h-5.16v-6.5c0-1.55-.03-3.54-2.16-3.54-2.16 0-2.49 1.68-2.49 3.42v6.62H9.34V9z"/></svg>
