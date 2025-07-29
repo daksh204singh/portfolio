@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const getTechIcon = (tech: string) => {
   // Check if we're on GitHub Pages by looking at the current pathname
-  const isGitHubPages = typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio');
+  const isGitHubPages = typeof window !== 'undefined' && (window.location.pathname.startsWith('/portfolio') || window.location.hostname.includes('github.io'));
   const basePath = isGitHubPages ? '/portfolio' : '';
   
   const icons: { [key: string]: string } = {
@@ -37,7 +37,7 @@ const getTechIcon = (tech: string) => {
 
 const getCompanyLogo = (company: string) => {
   // Check if we're on GitHub Pages by looking at the current pathname
-  const isGitHubPages = typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio');
+  const isGitHubPages = typeof window !== 'undefined' && (window.location.pathname.startsWith('/portfolio') || window.location.hostname.includes('github.io'));
   const basePath = isGitHubPages ? '/portfolio' : '';
   
   const logos: { [key: string]: string } = {
