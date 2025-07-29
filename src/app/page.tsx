@@ -88,17 +88,15 @@ export default function Home() {
                 role: "SOFTWARE ENGINEER",
                 location: "Remote",
                 duration: "May 2021 – Present",
-                description: "Engineered and deployed a scalable, event-driven messaging bot on AWS Lambda and API Gateway, processing inbound SMS/MMS via Twilio webhooks and orchestrating complex asynchronous workflows.",
+                description: "Led the end-to-end design and implementation of a scalable messaging bot, architecting the complete serverless AWS stack and designing database schemas to achieve 99.9% message processing success for thousands of users.",
                 achievements: [
-                  "Engineered and deployed a scalable, event-driven messaging bot on AWS Lambda and API Gateway",
-                  "Designed and implemented a multi-layered serverless architecture capable of scaling to thousands of users",
-                  "Built a database-driven campaign execution engine for dynamic conversational flows",
-                  "Optimized system performance to achieve average warm invocation latency of <70ms",
-                  "Developed robust message processing pipelines incorporating dynamic rate limiting",
-                  "Implemented conversational state management with DynamoDB and MongoDB Atlas",
-                  "Managed data storage and integrity across multiple AWS services"
+                  "Led the end-to-end design and implementation of a scalable messaging bot, architecting the complete serverless AWS stack (Lambda, API Gateway, SQS with DLQs) and designing the database schemas (DynamoDB, MongoDB) to achieve 99.9% message processing success for thousands of users",
+                  "Optimized system performance by fine-tuning AWS Lambda (Node.js/TypeScript) functions and database queries with DynamoDB (Dynamoose & AWS SDK) and MongoDB Atlas (Mongoose), slashing average warm invocation latency to under 70ms and reducing P95 cold start times to below 1 second",
+                  "Fortified system security by authoring and deploying a custom ClamAV AWS Lambda Layer, creating an automated virus scanning pipeline for S3 media uploads that successfully blocked 100% of detected malware in testing",
+                  "Developed a dynamic campaign engine with TypeScript & MongoDB Atlas that empowered non-technical users to manage conversational logic via JSON, reducing content update cycles from days to minutes and increasing campaign launch frequency by 50%",
+                  "Architected a CI/CD pipeline using GitHub Actions, cutting release times to under 5 minutes and eliminating 100% of cloud spend for all local and CI testing by using LocalStack to emulate AWS services"
                 ],
-                technologies: ["AWS Lambda", "TypeScript", "Node.js", "DynamoDB", "MongoDB", "SQS", "S3", "Twilio"]
+                technologies: ["AWS Lambda", "TypeScript", "Node.js", "DynamoDB", "MongoDB", "SQS", "S3", "API Gateway", "GitHub Actions", "ClamAV"]
               }}
               onWorkClick={handleWorkClick}
             />
@@ -107,16 +105,17 @@ export default function Home() {
               work={{
                 _id: "work-2",
                 company: "Eli Lilly & Company",
-                role: "SYSTEMS ENGINEER",
+                role: "SOFTWARE ENGINEER",
                 location: "Noida, India",
                 duration: "August 2021 – July 2024",
-                description: "Delivered scalable AI-powered solutions for Indianapolis Device Manufacturing, automating high-volume purchase order processing and developing enterprise automation tools.",
+                description: "Architected a scalable, high-availability system automating 78% of order fulfillment tasks using event-driven workflows, custom APIs, and AI; achieved a 6x increase in processing speed.",
                 achievements: [
-                  "Delivered a scalable AI-powered solution for Indianapolis Device Manufacturing, automating high-volume purchase order processing, increasing capacity to manage 100+ monthly orders, and improving processing speed by 6x",
-                  "Led process optimization efforts by developing 100+ Power Automates and 40+ PowerApps, collaborating with global teams to streamline workflows, and integrating Power BI dashboards for real-time analytics and decision-making",
-                  "Wrote PnP-PowerShell scripts for data migration and validation, automating repetitive tasks to reduce manual workload and cut down processing time by 70% and significantly enhancing system reliability"
+                  "Architected a scalable, high-availability (99.9%) system automating 78% of order fulfillment tasks using event-driven workflows, custom APIs, and AI; achieved a 6x increase in processing speed",
+                  "Revamped application performance by re-architecting data retrieval and implementing query delegation patterns, decreasing client load times by 65% and boosting user satisfaction scores from 2.7 to 4.9/5",
+                  "Authored PowerShell scripts for large-scale data migration and validation, automating and reducing manual processing time by 70% while ensuring data integrity across systems",
+                  "Spearheaded the development of a portfolio of 40+ applications and 100+ data processing pipelines with integrated real-time analytics, accelerating data-driven decision-making by 20%"
                 ],
-                technologies: ["Power Automate", "PowerApps", "Power BI", "PowerShell", "AI/ML"]
+                technologies: ["Power Automate", "PowerApps", "Power BI", "PowerShell", "AI/ML", "Event-Driven Architecture", "REST APIs"]
               }}
               onWorkClick={handleWorkClick}
             />
@@ -125,17 +124,17 @@ export default function Home() {
               work={{
                 _id: "work-3",
                 company: "RAKUTEN",
-                role: "TECHNICAL INTERN",
+                role: "SOFTWARE DEVELOPMENT ENGINEER INTERN",
                 location: "Bangalore, India",
                 duration: "January 2021 – June 2021",
-                description: "Designed and developed multithreaded applications and ETL microservices for large-scale data processing and cloud storage integration.",
+                description: "Constructed multithreaded Java & Spring Boot batch jobs and optimized core engine throughput by 25% through Hibernate query optimization.",
                 achievements: [
-                  "Designed and wrote a multithreaded application that processes over 1 million records and integrates with Box cloud storage to automate large-file uploads",
-                  "Developed a Jenkins pipeline to automate the deployment and integration of multithreaded applications",
-                  "Developed and optimized a Kafka-driven ETL microservices-based bulk processing engine using Java and Spring MVC",
-                  "Optimized database queries and eliminated redundant logging operations by analyzing log data and the codebase, improving performance and preventing system crashes in collaboration with Rakuten's infrastructure team"
+                  "Constructed a multithreaded Java & Spring Boot batch job to track 1M+ daily product updates for a BI dashboard, deployed via a Jenkins CI/CD pipeline",
+                  "Boosted core engine throughput by 25% by optimizing Hibernate (JPA) queries and resolving data-access bottlenecks across microservices",
+                  "Implemented a Redis caching layer that slashed dashboard load times by 99% (from 15s to <150ms) and eliminated 100% of its read load on the primary database",
+                  "Reduced data processing failures by 15% by resolving race conditions in Kafka streams and fixing critical data validation bugs"
                 ],
-                technologies: ["Java", "Spring MVC", "Kafka", "Jenkins", "Box", "Multithreading", "ETL"]
+                technologies: ["Java", "Spring Boot", "Hibernate", "Kafka", "Jenkins", "Redis", "JPA", "Microservices"]
               }}
               onWorkClick={handleWorkClick}
             />
