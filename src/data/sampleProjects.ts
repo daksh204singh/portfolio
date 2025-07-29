@@ -31,7 +31,7 @@ Contributed to the end-to-end system setup, including foundational environment c
     title:
       "POKÉCACHE: CACHE REPLACEMENT POLICY GENERATION WITH LLMs, CHAMPSIM, C++",
     slug: { current: "pokecache" },
-    thumbnail: typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio') ? '/portfolio/images/pokecache.svg' : '/images/pokecache.svg',
+    thumbnail: typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio') ? '/portfolio/images/pokecache.gif' : '/images/pokecache.gif',
     description: `Developed an automated framework that generates high-performance cache replacement policies using large language models (LLMs) and evolutionary search. Integrated with the ChampSim simulator to iteratively evolve and evaluate C++ implementations, outperforming traditional heuristics like LRU.
 
 The system leverages LLMs to generate and optimize cache replacement algorithms, then uses evolutionary search to refine and improve the generated policies. This approach demonstrates the potential of AI-assisted hardware optimization.`,
@@ -51,7 +51,7 @@ The system leverages LLMs to generate and optimize cache replacement algorithms,
     _id: "project-3",
     title: "HIGH-PERFORMANCE SORTING: BITONIC SORT, CUDA, C/C++",
     slug: { current: "bitonic-sort" },
-    thumbnail: typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio') ? '/portfolio/images/bitonic-sort.svg' : '/images/bitonic-sort.svg',
+    thumbnail: typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio') ? '/portfolio/images/bitonic-sort.gif' : '/images/bitonic-sort.gif',
     description: `Developed a high-performance parallel sorting solution using the Bitonic Sort algorithm, with implementations in OpenMP, CUDA (global and shared memory), and MPI. Analyzed scalability, identified limitations, and proposed future hybrid MPI + CUDA/OpenMP enhancements for improved distributed and multi-core performance.
 
 The project explores different parallel computing paradigms and their effectiveness for sorting algorithms, providing insights into performance optimization for large-scale data processing.`,
@@ -66,6 +66,30 @@ The project explores different parallel computing paradigms and their effectiven
     ],
     liveUrl: null,
     sourceUrl: "https://github.com/yourusername/bitonic-sort",
+    video: null,
+  },
+  {
+    _id: "project-4",
+    title: "OPERATING SYSTEM KERNEL SYNCHRONIZATION & CONCURRENCY",
+    slug: { current: "os-kernel-synchronization" },
+    thumbnail: typeof window !== 'undefined' && window.location.pathname.startsWith('/portfolio') ? '/portfolio/images/os-kernel.gif' : '/images/os-kernel.gif',
+    description: `Engineered core synchronization primitives (locks, condition variables) in C, ensuring thread safety on multiprocessor systems by implementing atomicity with low-level MIPS assembly (LL/SC) and validating with GDB for kernel debugging.
+
+Designed an efficient reader-writer lock by analyzing the classic problem of writer starvation, delivering a balanced solution that optimized for concurrent reads while ensuring fair resource access.
+
+The project demonstrates deep understanding of operating system internals, concurrent programming challenges, and low-level system programming techniques essential for building robust, thread-safe kernel components.`,
+    technologies: [
+      "C",
+      "MIPS Assembly",
+      "GDB",
+      "OS/161",
+      "System/161 Simulator",
+      "Synchronization",
+      "Concurrent Programming",
+      "Kernel Development",
+    ],
+    liveUrl: null,
+    sourceUrl: "https://github.com/yourusername/os-kernel-synchronization",
     video: null,
   },
 ];
