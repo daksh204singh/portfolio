@@ -69,14 +69,17 @@ export default function Home() {
                                 <p className="text-lg mb-4 max-w-2xl text-left text-neutral-600 dark:text-neutral-300">
                         I love making software faster, whether it&apos;s tuning cloud systems for sub-70ms speed or using AI to find new ways to improve performance.
                       </p>
-          <div className="flex gap-4 mb-4">
-            <a href="https://www.linkedin.com/in/dakshpratapsingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-neutral-700 dark:text-neutral-300 hover:opacity-80 transition-opacity">
-              <svg width="24" height="24" fill="currentColor"><path d="M4.98 3.5C3.33 3.5 2 4.82 2 6.4c0 1.56 1.3 2.9 2.94 2.9h.03c1.65 0 2.98-1.34 2.98-2.9C7.95 4.82 6.63 3.5 4.98 3.5zM2.4 21.5h5.16V9H2.4v12.5zM9.34 9h4.94v1.71h.07c.69-1.23 2.38-2.53 4.9-2.53 5.24 0 6.2 3.45 6.2 7.94V21.5h-5.16v-6.5c0-1.55-.03-3.54-2.16-3.54-2.16 0-2.49 1.68-2.49 3.42v6.62H9.34V9z"/></svg>
-            </a>
-            <a href="https://github.com/daksh204singh" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-neutral-700 dark:text-neutral-300 hover:opacity-80 transition-opacity">
-              <svg width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 7.07c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
-            </a>
-          </div>
+                                <div className="flex gap-4 mb-4">
+                        <a href="https://www.linkedin.com/in/dakshpratapsingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-neutral-700 dark:text-neutral-300 hover:opacity-80 transition-opacity">
+                          <svg width="24" height="24" fill="currentColor"><path d="M4.98 3.5C3.33 3.5 2 4.82 2 6.4c0 1.56 1.3 2.9 2.94 2.9h.03c1.65 0 2.98-1.34 2.98-2.9C7.95 4.82 6.63 3.5 4.98 3.5zM2.4 21.5h5.16V9H2.4v12.5zM9.34 9h4.94v1.71h.07c.69-1.23 2.38-2.53 4.9-2.53 5.24 0 6.2 3.45 6.2 7.94V21.5h-5.16v-6.5c0-1.55-.03-3.54-2.16-3.54-2.16 0-2.49 1.68-2.49 3.42v6.62H9.34V9z"/></svg>
+                        </a>
+                        <a href="https://github.com/daksh204singh" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-neutral-700 dark:text-neutral-300 hover:opacity-80 transition-opacity">
+                          <svg width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 7.07c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+                        </a>
+                        <a href="mailto:singh.daksh.pratap204@gmail.com" aria-label="Email" className="text-neutral-700 dark:text-neutral-300 hover:opacity-80 transition-opacity">
+                          <svg width="24" height="24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </a>
+                      </div>
         </header>
         <section>
           <h2 className="text-2xl font-bold mb-6 text-left font-rammetto-one text-neutral-900 dark:text-white">Experience</h2>
