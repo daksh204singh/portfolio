@@ -5,19 +5,31 @@ import { useState } from 'react';
 const skillCategories = {
   languages: {
     title: "Languages",
-    skills: ["Java", "Python", "C/C++", "CUDA", "SQL", "Ruby", "TypeScript", "PowerShell", "Bash"]
+    skills: ["Python", "Java", "JavaScript/TypeScript", "SQL", "C/C++", "Bash", "PowerShell"]
   },
   cloud: {
-    title: "Cloud & Developer Tools",
-    skills: ["Git", "Docker", "AWS", "Azure", "PyTorch", "Jupyter", "APK", "GDB", "Graylog", "Excel", "Jenkins", "Power BI", "Jira"]
+    title: "Cloud & DevOps",
+    skills: ["AWS Lambda", "AWS SQS", "AWS S3", "AWS API Gateway", "AWS DynamoDB", "AWS EventBridge", "AWS CloudWatch", "Docker", "CI/CD", "GitHub Actions", "Jenkins", "Serverless Framework"]
+  },
+  backend: {
+    title: "Backend & Distributed Systems",
+    skills: ["Spring Boot", "Hibernate", "Node.js", "Kafka", "REST APIs", "Microservices"]
   },
   databases: {
     title: "Databases",
-    skills: ["MySQL", "Couchbase", "Microsoft Dataverse"]
+    skills: ["MongoDB", "Mongoose", "DynamoDB", "Dynamoose", "MySQL", "Redis", "Couchbase"]
   },
-  frameworks: {
-    title: "Frameworks",
-    skills: ["ROS", "Spring", "Hibernate", "Angular", "CUDA", "Node.js", "Kafka", "JUnit", "Keras", "TensorFlow", "Scikit-learn"]
+  ml: {
+    title: "Machine Learning & AI",
+    skills: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "LangChain", "Hugging Face", "OpenCV", "Jupyter Notebooks"]
+  },
+  robotics: {
+    title: "Robotics & Simulation",
+    skills: ["ROS1", "ROS2", "Gazebo", "NAV2", "SLAM"]
+  },
+  parallel: {
+    title: "Low-Level & Parallel Computing",
+    skills: ["CUDA", "MPI", "OpenMP", "GDB", "MIPS Assembly"]
   }
 };
 
