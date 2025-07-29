@@ -7,9 +7,6 @@ const getTechIcon = (tech: string) => {
   // Use environment variable for base path during build time
   const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
   
-  // Debug logging
-  console.log('getTechIcon - NODE_ENV:', process.env.NODE_ENV, 'basePath:', basePath, 'tech:', tech);
-  
   const icons: { [key: string]: string } = {
     'AWS Lambda': `${basePath}/icons/aws-lambda.svg`,
     'TypeScript': `${basePath}/icons/typescript.svg`,
@@ -34,17 +31,12 @@ const getTechIcon = (tech: string) => {
     'AWS S3': `${basePath}/icons/s3.svg`,
     'REST APIs': `${basePath}/icons/rest-apis.svg`
   };
-  const result = icons[tech] || `${basePath}/icons/default.svg`;
-  console.log('getTechIcon - Result for', tech, ':', result);
-  return result;
+  return icons[tech] || `${basePath}/icons/default.svg`;
 };
 
 const getCompanyLogo = (company: string) => {
   // Use environment variable for base path during build time
   const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
-  
-  // Debug logging
-  console.log('getCompanyLogo - NODE_ENV:', process.env.NODE_ENV, 'basePath:', basePath, 'company:', company);
   
   const logos: { [key: string]: string } = {
     'Project REMA': `${basePath}/logos/rematriation-project.svg`,
@@ -53,9 +45,7 @@ const getCompanyLogo = (company: string) => {
     'IBM': `${basePath}/logos/ibm.png`
   };
   
-  const result = logos[company] || null;
-  console.log('getCompanyLogo - Result for', company, ':', result);
-  return result;
+  return logos[company] || null;
 };
 
 interface Work {
