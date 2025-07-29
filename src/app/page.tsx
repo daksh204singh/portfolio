@@ -140,22 +140,22 @@ export default function Home() {
               onWorkClick={handleWorkClick}
             />
 
-            <WorkCard 
-              work={{
-                _id: "work-4",
-                company: "IBM India",
-                role: "INTERN - SOFTWARE ENGINEER",
-                location: "Remote",
-                duration: "May 2020 – July 2020",
-                description: "Developed asynchronous REST APIs and implemented efficient file upload systems using modern web technologies.",
-                achievements: [
-                  "• Developed asynchronous REST APIs using Spring WebFlux, improving response times by 40% through non-blocking I/O",
-                  "• Implemented APIs for efficient large file uploads to AWS S3 and managed website content using MongoDB"
-                ],
-                technologies: ["Spring WebFlux", "AWS S3", "MongoDB", "REST APIs", "Asynchronous Programming"]
-              }}
-              onWorkClick={handleWorkClick}
-            />
+                                    <WorkCard 
+                          work={{
+                            _id: "work-4",
+                            company: "IBM",
+                            role: "INTERN - SOFTWARE ENGINEER",
+                            location: "Remote",
+                            duration: "May 2020 – July 2020",
+                            description: "Developed asynchronous REST APIs and implemented efficient file upload systems using modern web technologies.",
+                            achievements: [
+                              "• Developed asynchronous REST APIs using Spring WebFlux, improving response times by 40% through non-blocking I/O",
+                              "• Implemented APIs for efficient large file uploads to AWS S3 and managed website content using MongoDB"
+                            ],
+                            technologies: ["Spring WebFlux", "AWS S3", "MongoDB", "REST APIs", "Asynchronous Programming"]
+                          }}
+                          onWorkClick={handleWorkClick}
+                        />
           </ScrollableContainer>
         </section>
         <SkillsSection />

@@ -44,7 +44,7 @@ const getCompanyLogo = (company: string) => {
     'Project REMA': `${basePath}/logos/rematriation-project.svg`,
     'Eli Lilly & Company': `${basePath}/logos/eli-lilly.png`,
     'Rakuten': `${basePath}/logos/rakuten.png`,
-    'IBM India': `${basePath}/logos/ibm.png`
+    'IBM': `${basePath}/logos/ibm.png`
   };
   return logos[company] || null;
 };
