@@ -110,30 +110,7 @@ export default function WorkModal({ work, isOpen, onClose }: WorkModalProps) {
             </div>
           )}
 
-          {/* Additional Details */}
-                            <div className="bg-neutral-100 dark:bg-neutral-800 rounded-xl p-4">
-            <h3 className="text-lg font-semibold mb-3 font-rammetto-one">Technical Highlights</h3>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-neutral-600 dark:text-neutral-300">
-              <div>
-                                  <h4 className="font-medium text-neutral-900 dark:text-white mb-2">Architecture</h4>
-                <ul className="space-y-1">
-                  <li>• Serverless microservices</li>
-                  <li>• Event-driven architecture</li>
-                  <li>• Multi-database design</li>
-                  <li>• Real-time processing</li>
-                </ul>
-              </div>
-              <div>
-                                  <h4 className="font-medium text-neutral-900 dark:text-white mb-2">Performance</h4>
-                <ul className="space-y-1">
-                  <li>• &lt;70ms warm invocation</li>
-                  <li>• &lt;1s cold start times</li>
-                  <li>• 50 msg/60 min rate limiting</li>
-                  <li>• High availability design</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          {/* Additional Details intentionally removed to avoid duplicated content */}
         </div>
       </div>
     </div>

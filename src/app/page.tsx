@@ -94,11 +94,11 @@ export default function Home() {
                 duration: "May 2021 – Present",
                 description: "Led the end-to-end design and implementation of a scalable messaging bot, architecting the complete serverless AWS stack and designing database schemas to achieve 99.9% message processing success for thousands of users.",
                 achievements: [
-                  "• Led end-to-end design of scalable messaging bot with serverless AWS stack (Lambda, API Gateway, SQS with DLQs) achieving 99.9% message processing success",
-                  "• Optimized AWS Lambda functions and database queries, reducing warm invocation latency to <70ms and P95 cold start times to <1 second",
-                  "• Deployed custom ClamAV Lambda Layer for S3 virus scanning, blocking 100% of detected malware in testing",
-                  "• Built dynamic campaign engine enabling non-technical users to manage conversational logic via JSON, reducing update cycles from days to minutes",
-                  "• Architected CI/CD pipeline with GitHub Actions and LocalStack, cutting release times to <5 minutes and eliminating cloud spend for testing"
+                  "Led end-to-end design of scalable messaging bot with serverless AWS stack (Lambda, API Gateway, SQS with DLQs) achieving 99.9% message processing success",
+                  "Optimized AWS Lambda functions and database queries, reducing warm invocation latency to <70ms and P95 cold start times to <1 second",
+                  "Deployed custom ClamAV Lambda Layer for S3 virus scanning, blocking 100% of detected malware in testing",
+                  "Built dynamic campaign engine enabling non-technical users to manage conversational logic via JSON, reducing update cycles from days to minutes",
+                  "Architected CI/CD pipeline with GitHub Actions and LocalStack, cutting release times to <5 minutes and eliminating cloud spend for testing"
                 ],
                 technologies: ["AWS Lambda", "TypeScript", "Node.js", "DynamoDB", "MongoDB", "SQS", "S3", "API Gateway", "GitHub Actions", "ClamAV"]
               }}
@@ -114,10 +114,10 @@ export default function Home() {
                 duration: "August 2021 – July 2024",
                 description: "Architected a scalable, high-availability system automating 78% of order fulfillment tasks using event-driven workflows, custom APIs, and AI; achieved a 6x increase in processing speed.",
                 achievements: [
-                  "• Architected scalable, high-availability (99.9%) system automating 78% of order fulfillment tasks, achieving 6x processing speed increase",
-                  "• Revamped application performance with query delegation patterns, decreasing client load times by 65% and boosting user satisfaction from 2.7 to 4.9/5",
-                  "• Authored PowerShell scripts for large-scale data migration, reducing manual processing time by 70% while ensuring data integrity",
-                  "• Spearheaded development of 40+ applications and 100+ data pipelines with real-time analytics, accelerating decision-making by 20%"
+                  "Architected scalable, high-availability (99.9%) system automating 78% of order fulfillment tasks, achieving 6x processing speed increase",
+                  "Revamped application performance with query delegation patterns, decreasing client load times by 65% and boosting user satisfaction from 2.7 to 4.9/5",
+                  "Authored PowerShell scripts for large-scale data migration, reducing manual processing time by 70% while ensuring data integrity",
+                  "Spearheaded development of 40+ applications and 100+ data pipelines with real-time analytics, accelerating decision-making by 20%"
                 ],
                 technologies: ["Power Automate", "PowerApps", "Power BI", "PowerShell", "AI/ML", "Event-Driven Architecture", "REST APIs"]
               }}
@@ -133,10 +133,10 @@ export default function Home() {
                 duration: "January 2021 – June 2021",
                 description: "Constructed multithreaded Java & Spring Boot batch jobs and optimized core engine throughput by 25% through Hibernate query optimization.",
                 achievements: [
-                  "• Constructed multithreaded Java & Spring Boot batch job tracking 1M+ daily product updates, deployed via Jenkins CI/CD pipeline",
-                  "• Boosted core engine throughput by 25% through Hibernate (JPA) query optimization and microservice bottleneck resolution",
-                  "• Implemented Redis caching layer reducing dashboard load times by 99% (15s to <150ms) and eliminating 100% of database read load",
-                  "• Reduced data processing failures by 15% by resolving Kafka stream race conditions and fixing critical validation bugs"
+                  "Constructed multithreaded Java & Spring Boot batch job tracking 1M+ daily product updates, deployed via Jenkins CI/CD pipeline",
+                  "Boosted core engine throughput by 25% through Hibernate (JPA) query optimization and microservice bottleneck resolution",
+                  "Implemented Redis caching layer reducing dashboard load times by 99% (15s to <150ms) and eliminating 100% of database read load",
+                  "Reduced data processing failures by 15% by resolving Kafka stream race conditions and fixing critical validation bugs"
                 ],
                 technologies: ["Java", "Spring Boot", "Hibernate", "Kafka", "Jenkins", "Redis", "JPA", "Microservices"]
               }}
@@ -152,8 +152,8 @@ export default function Home() {
                             duration: "May 2020 – July 2020",
                             description: "Developed asynchronous REST APIs and implemented efficient file upload systems using modern web technologies.",
                             achievements: [
-                              "• Developed asynchronous REST APIs using Spring WebFlux, improving response times by 40% through non-blocking I/O",
-                              "• Implemented APIs for efficient large file uploads to AWS S3 and managed website content using MongoDB"
+                              "Developed asynchronous REST APIs using Spring WebFlux, improving response times by 40% through non-blocking I/O",
+                              "Implemented APIs for efficient large file uploads to AWS S3 and managed website content using MongoDB"
                             ],
                             technologies: ["Spring WebFlux", "AWS S3", "MongoDB", "REST APIs", "Asynchronous Programming"]
                           }}

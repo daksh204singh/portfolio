@@ -23,7 +23,7 @@ Contributed to the end-to-end system setup, including foundational environment c
       "URDF",
     ],
     liveUrl: null,
-    sourceUrl: "https://github.com/yourusername/multi-robot-system",
+    sourceUrl: "https://github.com/daksh204singh/jackal-path-finder",
     video: null,
   },
   {
@@ -44,7 +44,7 @@ The system leverages LLMs to generate and optimize cache replacement algorithms,
       "Machine Learning",
     ],
     liveUrl: null,
-    sourceUrl: "https://github.com/yourusername/pokecache",
+    sourceUrl: "https://github.com/daksh204singh/PokeCache.git",
     video: null,
   },
   {
@@ -65,7 +65,7 @@ The project explores different parallel computing paradigms and their effectiven
       "GPU Computing",
     ],
     liveUrl: null,
-    sourceUrl: "https://github.com/yourusername/bitonic-sort",
+    sourceUrl: "https://github.com/daksh204singh/parallel-bitonic-sort",
     video: null,
   },
   {
@@ -89,7 +89,7 @@ The project demonstrates deep understanding of operating system internals, concu
       "Kernel Development",
     ],
     liveUrl: null,
-    sourceUrl: "https://github.com/yourusername/os-kernel-synchronization",
+    sourceUrl: "https://github.com/daksh204singh/os161",
     video: null,
   },
 ];

@@ -24,6 +24,8 @@ const getTechIcon = (tech: string) => {
     'AI/ML': `${basePath}/icons/ai-ml.svg`,
     'Java': `${basePath}/icons/java.svg`,
     'Spring MVC': `${basePath}/icons/spring.svg`,
+    'Spring Boot': `${basePath}/icons/spring.svg`,
+    'Hibernate': `${basePath}/icons/spring.svg`,
     'Kafka': `${basePath}/icons/kafka.svg`,
     'Jenkins': `${basePath}/icons/jenkins.svg`,
     'Box': `${basePath}/icons/box.svg`,
