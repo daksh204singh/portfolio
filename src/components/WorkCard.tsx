@@ -4,9 +4,8 @@
 import Image from 'next/image';
 
 const getTechIcon = (tech: string) => {
-  // Check if we're on GitHub Pages by looking at the current pathname
-  const isGitHubPages = typeof window !== 'undefined' && (window.location.pathname.startsWith('/portfolio') || window.location.hostname.includes('github.io'));
-  const basePath = isGitHubPages ? '/portfolio' : '';
+  // Use environment variable for base path during build time
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
   
   const icons: { [key: string]: string } = {
     'AWS Lambda': `${basePath}/icons/aws-lambda.svg`,
@@ -36,14 +35,8 @@ const getTechIcon = (tech: string) => {
 };
 
 const getCompanyLogo = (company: string) => {
-  // Check if we're on GitHub Pages by looking at the current pathname
-  const isGitHubPages = typeof window !== 'undefined' && (window.location.pathname.startsWith('/portfolio') || window.location.hostname.includes('github.io'));
-  const basePath = isGitHubPages ? '/portfolio' : '';
-  
-  // Debug logging
-  if (typeof window !== 'undefined') {
-    console.log('getCompanyLogo - Company:', company, 'isGitHubPages:', isGitHubPages, 'basePath:', basePath);
-  }
+  // Use environment variable for base path during build time
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
   
   const logos: { [key: string]: string } = {
     'Project REMA': `${basePath}/logos/rematriation-project.svg`,
@@ -52,11 +45,7 @@ const getCompanyLogo = (company: string) => {
     'IBM': `${basePath}/logos/ibm.png`
   };
   
-  const result = logos[company] || null;
-  if (typeof window !== 'undefined') {
-    console.log('getCompanyLogo - Result:', result);
-  }
-  return result;
+  return logos[company] || null;
 };
 
 interface Work {
@@ -95,11 +84,6 @@ export default function WorkCard({ work, onWorkClick }: WorkCardProps) {
   const pastelColor = pastelColors[colorIndex];
 
   const companyLogo = getCompanyLogo(work.company);
-  
-  // Debug logging
-  if (typeof window !== 'undefined') {
-    console.log('Company:', work.company, 'Logo:', companyLogo);
-  }
 
   const handleClick = () => {
     onWorkClick(work);
