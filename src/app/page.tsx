@@ -85,7 +85,7 @@ export default function Home() {
             <WorkCard 
               work={{
                 _id: "work-1",
-                company: "PROJECT REMA",
+                company: "Project REMA",
                 role: "SOFTWARE ENGINEER",
                 location: "Remote",
                 duration: "May 2021 – Present",
@@ -124,7 +124,7 @@ export default function Home() {
             <WorkCard 
               work={{
                 _id: "work-3",
-                company: "RAKUTEN",
+                company: "Rakuten",
                 role: "SOFTWARE DEVELOPMENT ENGINEER INTERN",
                 location: "Bangalore, India",
                 duration: "January 2021 – June 2021",
@@ -143,7 +143,7 @@ export default function Home() {
             <WorkCard 
               work={{
                 _id: "work-4",
-                company: "IBM INDIA",
+                company: "IBM India",
                 role: "INTERN - SOFTWARE ENGINEER",
                 location: "Remote",
                 duration: "May 2020 – July 2020",
