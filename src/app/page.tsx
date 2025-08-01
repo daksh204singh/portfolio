@@ -91,7 +91,7 @@ export default function Home() {
                 company: "Project REMA",
                 role: "SOFTWARE ENGINEER",
                 location: "Remote",
-                duration: "May 2021 – Present",
+                duration: "May 2025 – Present",
                 description: "Led the end-to-end design and implementation of a scalable messaging bot, architecting the complete serverless AWS stack and designing database schemas to achieve 99.9% message processing success for thousands of users.",
                 achievements: [
                   "Led end-to-end design of scalable messaging bot with serverless AWS stack (Lambda, API Gateway, SQS with DLQs) achieving 99.9% message processing success",
