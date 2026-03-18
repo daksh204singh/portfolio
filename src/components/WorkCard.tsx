@@ -9,8 +9,14 @@ const getTechIcon = (tech: string) => {
   
   const icons: { [key: string]: string } = {
     'AWS Lambda': `${basePath}/icons/aws-lambda.svg`,
+    'AWS': `${basePath}/icons/aws.svg`,
+    'AWS Textract': `${basePath}/icons/aws.svg`,
     'TypeScript': `${basePath}/icons/typescript.svg`,
     'Node.js': `${basePath}/icons/nodejs.svg`,
+    'FastAPI': `${basePath}/icons/fastapi.svg`,
+    'PostgreSQL': `${basePath}/icons/postgresql.svg`,
+    'pgvector': `${basePath}/icons/pgvector.svg`,
+    'Kubernetes': `${basePath}/icons/kubernetes.svg`,
     'DynamoDB': `${basePath}/icons/dynamodb.svg`,
     'MongoDB': `${basePath}/icons/mongodb.svg`,
     'SQS': `${basePath}/icons/sqs.svg`,
@@ -42,7 +48,8 @@ const getCompanyLogo = (company: string) => {
   
   const logos: { [key: string]: string } = {
     'Project REMA': `${basePath}/logos/rematriation-project.svg`,
-    'Eli Lilly & Company': `${basePath}/logos/eli-lilly.png`,
+    'Game2Learn Lab, NC State University': `${basePath}/logos/g2l_controller.png`,
+    'Tata Consultancy Services': `${basePath}/logos/Tata_Consultancy_Services_old_logo.svg.png`,
     'Rakuten': `${basePath}/logos/rakuten.png`,
     'IBM': `${basePath}/logos/ibm.png`
   };
@@ -60,6 +67,7 @@ interface Work {
   achievements: string[];
   logo?: string;
   technologies?: string[];
+  accentColor?: string;
 }
 
 interface WorkCardProps {
@@ -83,7 +91,7 @@ export default function WorkCard({ work, onWorkClick }: WorkCardProps) {
     hash = work._id.charCodeAt(i) + ((hash << 5) - hash);
   }
   const colorIndex = Math.abs(hash) % pastelColors.length;
-  const pastelColor = pastelColors[colorIndex];
+  const pastelColor = work.accentColor ?? pastelColors[colorIndex];
 
   const companyLogo = getCompanyLogo(work.company);
 

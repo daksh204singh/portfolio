@@ -87,18 +87,41 @@ export default function Home() {
             {/* Work experience entries */}
             <WorkCard 
               work={{
+                _id: "work-0",
+                company: "Game2Learn Lab, NC State University",
+                role: "AI Software Engineer",
+                location: "Raleigh, NC",
+                duration: "August 2025 – Present",
+                description: "Designing and building BotBuilder, a collaborative GenAI platform for students, with a microservices architecture and production-grade observability.",
+                achievements: [
+                  "Designed and built BotBuilder, a collaborative GenAI platform for students, with a microservices architecture, hybrid Postgres/MongoDB schema, and OAuth-based authentication with role-based access control (RBAC).",
+                  "Built an asynchronous RAG pipeline using pgvector for vector retrieval and RabbitMQ for job queuing, and Dockerized FastAPI workers serving locally hosted LLMs via vLLM for concurrent user inference.",
+                  "Developed tool-using conversational agents with LangGraph and integrated Langfuse for end-to-end tracing and observability across the platform.",
+                  "Reduced average chatbot response time by 75% (20s to 5s) by re-architecting prompt chaining and optimizing inference cost through local LLM deployment.",
+                  "Accelerated platform development by leveraging Cursor AI agents and custom rules to automate boilerplate-heavy tasks including multi-file refactoring, schema migrations, API scaffolding, and configuration wiring across microservices."
+                ],
+                accentColor: "#B8F2E6",
+                technologies: ["FastAPI", "PostgreSQL", "MongoDB", "pgvector", "RabbitMQ", "Docker", "vLLM", "LangGraph", "Langfuse", "OAuth2", "RBAC", "RAG"]
+              }}
+              onWorkClick={handleWorkClick}
+            />
+
+            <WorkCard 
+              work={{
                 _id: "work-1",
                 company: "Project REMA",
-                role: "SOFTWARE ENGINEER",
+                role: "Software Engineer",
                 location: "Remote",
                 duration: "May 2025 – Present",
-                description: "Led the end-to-end design and implementation of a scalable messaging bot, architecting the complete serverless AWS stack and designing database schemas to achieve 99.9% message processing success for thousands of users.",
+                description: "Built Pakak, a mobile-first SMS/MMS archiving and messaging platform on a fully serverless AWS stack, focused on reliability, security, and cost-efficient scale.",
                 achievements: [
-                  "Led end-to-end design of scalable messaging bot with serverless AWS stack (Lambda, API Gateway, SQS with DLQs) achieving 99.9% message processing success",
-                  "Optimized AWS Lambda functions and database queries, reducing warm invocation latency to <70ms and P95 cold start times to <1 second",
-                  "Deployed custom ClamAV Lambda Layer for S3 virus scanning, blocking 100% of detected malware in testing",
-                  "Built dynamic campaign engine enabling non-technical users to manage conversational logic via JSON, reducing update cycles from days to minutes",
-                  "Architected CI/CD pipeline with GitHub Actions and LocalStack, cutting release times to <5 minutes and eliminating cloud spend for testing"
+                  "Built Pakak, a mobile-first SMS/MMS archiving platform, processing 50k+ message bursts with under 0.1% loss using AWS Lambda, SQS, DynamoDB, and MongoDB.",
+                  "Designed resilient ingestion and storage pipelines with backpressure handling, rate limiting, and async buffering to prevent carrier spam flagging while maintaining under 70 ms warm latency and under 1 second P95 cold starts.",
+                  "Developed a serverless messaging bot architecture that improved message processing reliability and ensured consistent delivery at scale.",
+                  "Engineered a JSON-driven campaign system using TypeScript and MongoDB Atlas, enabling non-technical users to manage conversational flows and reducing content update cycles from days to minutes.",
+                  "Built a custom ClamAV-based Lambda layer for automated file scanning, securing uploads before downstream processing.",
+                  "Optimized Lambda execution performance in Node.js and TypeScript, minimizing cold start impact and improving runtime efficiency.",
+                  "Implemented a CI/CD pipeline with GitHub Actions and LocalStack, reducing release times to under 5 minutes while eliminating cloud costs for local and pipeline testing."
                 ],
                 technologies: ["AWS Lambda", "TypeScript", "Node.js", "DynamoDB", "MongoDB", "SQS", "S3", "API Gateway", "GitHub Actions", "ClamAV"]
               }}
@@ -108,18 +131,19 @@ export default function Home() {
             <WorkCard 
               work={{
                 _id: "work-2",
-                company: "Eli Lilly & Company",
-                role: "SOFTWARE ENGINEER",
+                company: "Tata Consultancy Services",
+                role: "Software Engineer",
                 location: "Noida, India",
                 duration: "August 2021 – July 2024",
-                description: "Architected a scalable, high-availability system automating 78% of order fulfillment tasks using event-driven workflows, custom APIs, and AI; achieved a 6x increase in processing speed.",
+                description: "Built and scaled order-processing microservices at Tata Consultancy Services, focusing on high-throughput purchase order workflows, resilient distributed processing, and real-time customer notifications.",
                 achievements: [
-                  "Architected scalable, high-availability (99.9%) system automating 78% of order fulfillment tasks, achieving 6x processing speed increase",
-                  "Revamped application performance with query delegation patterns, decreasing client load times by 65% and boosting user satisfaction from 2.7 to 4.9/5",
-                  "Authored PowerShell scripts for large-scale data migration, reducing manual processing time by 70% while ensuring data integrity",
-                  "Spearheaded development of 40+ applications and 100+ data pipelines with real-time analytics, accelerating decision-making by 20%"
+                  "Built Spring Boot microservices on Kubernetes processing 10k+ purchase orders per day via Kafka consumer group parallelism, reducing end-to-end processing time by 35%.",
+                  "Integrated AWS Textract to automate PDF extraction of purchase order fields across 10k documents per month, eliminating manual data entry and reducing ingestion errors by 35%.",
+                  "Migrated 15 endpoints from REST to GraphQL, cutting average API payload size by 40% and reducing client load times on data-heavy views by 30%.",
+                  "Added optimistic locking and a live 'currently being edited' indicator on purchase order line items to prevent concurrent write conflicts and protect order integrity.",
+                  "Built notification workflows with webhook-based carrier API integrations to deliver real-time SMS and email alerts across user segments."
                 ],
-                technologies: ["Power Automate", "PowerApps", "Power BI", "PowerShell", "AI/ML", "Event-Driven Architecture", "REST APIs"]
+                technologies: ["Spring Boot", "Kafka", "Kubernetes", "AWS Textract", "GraphQL", "Optimistic Locking", "Webhooks", "SMS/Email"]
               }}
               onWorkClick={handleWorkClick}
             />
@@ -128,7 +152,7 @@ export default function Home() {
               work={{
                 _id: "work-3",
                 company: "Rakuten",
-                role: "SOFTWARE DEVELOPMENT ENGINEER INTERN",
+                role: "Software Development Engineer Intern",
                 location: "Bangalore, India",
                 duration: "January 2021 – June 2021",
                 description: "Constructed multithreaded Java & Spring Boot batch jobs and optimized core engine throughput by 25% through Hibernate query optimization.",
@@ -147,7 +171,7 @@ export default function Home() {
                           work={{
                             _id: "work-4",
                             company: "IBM",
-                            role: "INTERN - SOFTWARE ENGINEER",
+                            role: "Intern - Software Engineer",
                             location: "Remote",
                             duration: "May 2020 – July 2020",
                             description: "Developed asynchronous REST APIs and implemented efficient file upload systems using modern web technologies.",

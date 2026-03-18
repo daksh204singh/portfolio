@@ -9,19 +9,27 @@ const skillCategories = {
   },
   cloud: {
     title: "Cloud & DevOps",
-    skills: ["AWS Lambda", "AWS SQS", "AWS S3", "AWS API Gateway", "AWS DynamoDB", "AWS EventBridge", "AWS CloudWatch", "Docker", "CI/CD", "GitHub Actions", "Jenkins", "Serverless Framework"]
+    skills: ["AWS", "AWS Lambda", "AWS Textract", "AWS SQS", "AWS S3", "AWS API Gateway", "AWS DynamoDB", "AWS EventBridge", "AWS CloudWatch", "Kubernetes", "Docker", "NGINX", "Ansible", "CI/CD", "GitHub Actions", "Jenkins", "Serverless Framework", "LocalStack"]
   },
   backend: {
     title: "Backend & Distributed Systems",
-    skills: ["Spring Boot", "Hibernate", "Node.js", "Kafka", "REST APIs", "Microservices"]
+    skills: ["FastAPI", "Spring Boot", "Hibernate", "Node.js", "Kafka", "RabbitMQ", "REST APIs", "GraphQL", "Webhooks", "Microservices", "Event-Driven Architecture", "Optimistic Locking", "OAuth2", "RBAC"]
   },
   databases: {
     title: "Databases",
-    skills: ["MongoDB", "Mongoose", "DynamoDB", "Dynamoose", "MySQL", "Redis", "Couchbase"]
+    skills: ["PostgreSQL", "pgvector", "MongoDB", "MongoDB Atlas", "Mongoose", "DynamoDB", "Dynamoose", "MySQL", "Redis", "Couchbase"]
   },
   ml: {
     title: "Machine Learning & AI",
-    skills: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "LangChain", "Hugging Face", "OpenCV", "Jupyter Notebooks"]
+    skills: ["RAG", "LangGraph", "LangChain", "vLLM", "Langfuse", "Hugging Face", "PyTorch", "TensorFlow", "Keras", "Scikit-learn", "OpenCV", "Jupyter Notebooks"]
+  },
+  agentic: {
+    title: "Agentic AI",
+    skills: ["AI Agents", "Tool Calling", "LangGraph", "RAG", "Vector Search", "Prompt Chaining", "Structured Outputs", "Function Calling", "Langfuse", "Evaluation & Tracing"]
+  },
+  observability: {
+    title: "Observability & Testing",
+    skills: ["Prometheus", "Grafana", "Loki", "Load Testing", "Locust", "Unit Testing", "Integration Testing", "Security Scans"]
   },
   robotics: {
     title: "Robotics & Simulation",

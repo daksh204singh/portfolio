@@ -1,5 +1,37 @@
 export const sampleProjects = [
   {
+    _id: "project-0",
+    title: "DISTRIBUTED BANKING CI/CD PIPELINE",
+    slug: { current: "distributed-banking-cicd-pipeline" },
+    thumbnail:
+      process.env.NODE_ENV === "production"
+        ? "/portfolio/images/devops_pipeline.gif"
+        : "/images/devops_pipeline.gif",
+    description: `Built an event-driven CI/CD pipeline for a distributed microservices system, automating testing, deployment, and rollback.
+
+- Built an event-driven CI/CD pipeline for a distributed microservices system, automating testing, deployment, and rollback.
+- Designed GitHub Actions workflows with linting, unit and integration tests, load testing, and security scans to enforce strict PR gating.
+- Implemented canary deployments using NGINX and Ansible, enabling progressive traffic shifting and automatic rollback on failure.
+- Developed webhook-driven auto-scaling services to dynamically adjust container replicas based on system load, with automatic NGINX service discovery and load balancing.
+- Built an observability stack using Prometheus, Grafana, and Loki with real-time metrics, logs, and alerting.
+- Containerized services using Docker and FastAPI, enabling reproducible builds and consistent deployments.`,
+    technologies: [
+      "Docker",
+      "GitHub Actions",
+      "Ansible",
+      "FastAPI",
+      "NGINX",
+      "Prometheus",
+      "Grafana",
+      "Loki",
+      "Python",
+      "Locust",
+    ],
+    liveUrl: null,
+    sourceUrl: "https://github.com/daksh204singh/distributed-banking-ops",
+    video: null,
+  },
+  {
     _id: "project-1",
     title: "MULTI-ROBOT SYSTEM FOR AUTONOMOUS NAVIGATION AND ANOMALY DETECTION",
     slug: { current: "multi-robot-system" },
