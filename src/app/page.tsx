@@ -114,7 +114,7 @@ That work helped turn the system into something usable in practice. After optimi
                 company: "Project REMA",
                 role: "Software Engineer",
                 location: "Remote",
-                duration: "May 2025 – Present",
+                duration: "May 2025 – July 2025",
                 description: `At the Rematriation Project, I worked on a mobile-first SMS/MMS archiving platform built for bursty, real-world messaging traffic.
 
 The central challenge was reliability under load. The system had to absorb sudden spikes, avoid carrier spam flagging, and still remain fast and inexpensive enough to run in a serverless environment.
