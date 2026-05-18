@@ -67,7 +67,7 @@ export default function Home() {
         <header className="mb-10">
           <h1 className="text-4xl font-extrabold mb-2 text-left font-rammetto-one text-neutral-900 dark:text-white">Daksh Pratap Singh</h1>
                                 <p className="text-lg mb-4 max-w-2xl text-left text-neutral-600 dark:text-neutral-300">
-                        I love making software faster, whether it&apos;s tuning cloud systems for sub-70ms speed or using AI to find new ways to improve performance.
+                        Hi, I&apos;m a software engineer focused on distributed systems, data infrastructure, and AI-powered applications.
                       </p>
                                 <div className="flex gap-4 mb-4">
                         <a href="https://www.linkedin.com/in/dakshpratapsingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-neutral-700 dark:text-neutral-300 hover:opacity-80 transition-opacity">
@@ -92,14 +92,16 @@ export default function Home() {
                 role: "AI Software Engineer",
                 location: "Raleigh, NC",
                 duration: "August 2025 – Present",
-                description: "Designing and building BotBuilder, a collaborative GenAI platform for students, with a microservices architecture and production-grade observability.",
-                achievements: [
-                  "Designed and built BotBuilder, a collaborative GenAI platform for students, with a microservices architecture, hybrid Postgres/MongoDB schema, and OAuth-based authentication with role-based access control (RBAC).",
-                  "Built an asynchronous RAG pipeline using pgvector for vector retrieval and RabbitMQ for job queuing, and Dockerized FastAPI workers serving locally hosted LLMs via vLLM for concurrent user inference.",
-                  "Developed tool-using conversational agents with LangGraph and integrated Langfuse for end-to-end tracing and observability across the platform.",
-                  "Reduced average chatbot response time by 75% (20s to 5s) by re-architecting prompt chaining and optimizing inference cost through local LLM deployment.",
-                  "Accelerated platform development by leveraging Cursor AI agents and custom rules to automate boilerplate-heavy tasks including multi-file refactoring, schema migrations, API scaffolding, and configuration wiring across microservices."
-                ],
+                description: `At Game2Learn Lab, I built BotBuilder as the primary engineer behind the platform, taking it from an idea into a classroom-ready GenAI system now used by 200 students across multiple schools.
+
+The challenge was making it reliable in a real educational setting. It had to stay responsive during live chat, protect student data, and support collaboration without turning into a fragile AI demo.
+
+To make that work, I designed a React frontend and six stateless Python/FastAPI services spanning authentication, chat, retrieval, storage, inference, and analytics. I also built an asynchronous document-ingestion pipeline with pgvector, RabbitMQ, FastAPI, and vLLM so background processing would not slow down live chat, and added SSE-based progress streaming with Redis coordination for longer-running tasks.
+
+I also implemented fine-grained access controls for chats, bots, and course assets so the platform could support collaborative classroom use without exposing student conversations or course data.
+
+That work helped turn the system into something usable in practice. After optimizing prompts, agent behavior, and the inference path, I reduced chatbot latency from 20 seconds to 5 while cutting per-request cost by 60%. The biggest lesson from the project was that building AI products well is really a systems problem: performance, trust boundaries, and workload isolation matter just as much as model quality.`,
+                achievements: [],
                 accentColor: "#B8F2E6",
                 technologies: ["FastAPI", "PostgreSQL", "MongoDB", "pgvector", "RabbitMQ", "Docker", "vLLM", "LangGraph", "Langfuse", "OAuth2", "RBAC", "RAG"]
               }}
@@ -113,16 +115,16 @@ export default function Home() {
                 role: "Software Engineer",
                 location: "Remote",
                 duration: "May 2025 – Present",
-                description: "Built Pakak, a mobile-first SMS/MMS archiving and messaging platform on a fully serverless AWS stack, focused on reliability, security, and cost-efficient scale.",
-                achievements: [
-                  "Built Pakak, a mobile-first SMS/MMS archiving platform, processing 50k+ message bursts with under 0.1% loss using AWS Lambda, SQS, DynamoDB, and MongoDB.",
-                  "Designed resilient ingestion and storage pipelines with backpressure handling, rate limiting, and async buffering to prevent carrier spam flagging while maintaining under 70 ms warm latency and under 1 second P95 cold starts.",
-                  "Developed a serverless messaging bot architecture that improved message processing reliability and ensured consistent delivery at scale.",
-                  "Engineered a JSON-driven campaign system using TypeScript and MongoDB Atlas, enabling non-technical users to manage conversational flows and reducing content update cycles from days to minutes.",
-                  "Built a custom ClamAV-based Lambda layer for automated file scanning, securing uploads before downstream processing.",
-                  "Optimized Lambda execution performance in Node.js and TypeScript, minimizing cold start impact and improving runtime efficiency.",
-                  "Implemented a CI/CD pipeline with GitHub Actions and LocalStack, reducing release times to under 5 minutes while eliminating cloud costs for local and pipeline testing."
-                ],
+                description: `At the Rematriation Project, I worked on a mobile-first SMS/MMS archiving platform built for bursty, real-world messaging traffic.
+
+The central challenge was reliability under load. The system had to absorb sudden spikes, avoid carrier spam flagging, and still remain fast and inexpensive enough to run in a serverless environment.
+
+I built the platform on a serverless TypeScript stack using AWS Lambda, SQS, DynamoDB, and MongoDB. Much of the work went into designing ingestion and storage paths that could safely handle load through asynchronous buffering, backpressure, and rate controls rather than brute-force scaling.
+
+I also automated delivery workflows with GitHub Actions so changes could be shipped faster and with less manual overhead.
+
+In production, the system handled bursts of more than 50,000 messages with sub-0.1% message loss, maintained sub-70ms warm latency, and kept P95 cold starts under one second. Release cycles also dropped from 30 minutes to under 5. What stayed with me from that project was how much reliability depends on controlling flow through the system, not just scaling infrastructure.`,
+                achievements: [],
                 technologies: ["AWS Lambda", "TypeScript", "Node.js", "DynamoDB", "MongoDB", "SQS", "S3", "API Gateway", "GitHub Actions", "ClamAV"]
               }}
               onWorkClick={handleWorkClick}
@@ -135,14 +137,16 @@ export default function Home() {
                 role: "Software Engineer",
                 location: "Noida, India",
                 duration: "August 2021 – July 2024",
-                description: "Built and scaled order-processing microservices at Tata Consultancy Services, focusing on high-throughput purchase order workflows, resilient distributed processing, and real-time customer notifications.",
-                achievements: [
-                  "Built Spring Boot microservices on Kubernetes processing 10k+ purchase orders per day via Kafka consumer group parallelism, reducing end-to-end processing time by 35%.",
-                  "Integrated AWS Textract to automate PDF extraction of purchase order fields across 10k documents per month, eliminating manual data entry and reducing ingestion errors by 35%.",
-                  "Migrated 15 endpoints from REST to GraphQL, cutting average API payload size by 40% and reducing client load times on data-heavy views by 30%.",
-                  "Added optimistic locking and a live 'currently being edited' indicator on purchase order line items to prevent concurrent write conflicts and protect order integrity.",
-                  "Built notification workflows with webhook-based carrier API integrations to deliver real-time SMS and email alerts across user segments."
-                ],
+                description: `At Tata Consultancy Services, I worked on enterprise purchase-order processing systems where backend performance had direct consequences for day-to-day operations.
+
+The work focused on improving throughput, reducing manual document handling, and modernizing the platform without disrupting existing workflows.
+
+I built Spring Boot microservices on Kubernetes and used Kafka consumer-group parallelism to scale processing across the purchase-order pipeline. I also integrated AWS Textract to automate extraction of purchase-order fields from incoming documents, reducing manual entry and improving consistency in ingestion.
+
+To improve efficiency for downstream consumers, I migrated 15 endpoints from REST to GraphQL, which reduced over-fetching and streamlined data access patterns.
+
+These changes helped the platform process more than 10,000 purchase orders per day while reducing end-to-end processing time by 60%. Textract supported automation across roughly 10,000 documents each month and cut manual data-entry incidents by 25%, while the GraphQL migration reduced payload sizes by 40% and improved load times by 30%. That experience taught me how much impact backend engineering can have when it is tied directly to operational workflows.`,
+                achievements: [],
                 technologies: ["Spring Boot", "Kafka", "Kubernetes", "AWS Textract", "GraphQL", "Optimistic Locking", "Webhooks", "SMS/Email"]
               }}
               onWorkClick={handleWorkClick}

@@ -76,7 +76,7 @@ export default function WorkModal({ work, isOpen, onClose }: WorkModalProps) {
               <p className="text-lg text-neutral-500 dark:text-neutral-400">{work.duration}</p>
             </div>
           </div>
-          <p className="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">{work.description}</p>
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed whitespace-pre-line">{work.description}</p>
         </div>
 
         {/* Content */}

@@ -132,7 +132,7 @@ export default function WorkCard({ work, onWorkClick }: WorkCardProps) {
         </div>
         
         {/* Description */}
-        <div className="text-sm opacity-90 line-clamp-4" style={{ color: '#000000' }}>
+        <div className="text-sm opacity-90 line-clamp-4 whitespace-pre-line" style={{ color: '#000000' }}>
           {work.description}
         </div>
         
